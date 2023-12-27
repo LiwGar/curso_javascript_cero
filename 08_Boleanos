@@ -1,0 +1,23 @@
+let isActive = true;
+
+let hasPermisson = false;
+
+
+//Conversion implicita
+let result = 5 > 3;
+
+console.log(result);
+
+let name = 'Platzi';
+
+console.log(!!name);
+
+
+// Conversion Explicita
+let value = 0;
+
+let otherValue = -24;
+
+let explicitBoolean = Boolean(otherValue);
+
+console.log(explicitBoolean);
