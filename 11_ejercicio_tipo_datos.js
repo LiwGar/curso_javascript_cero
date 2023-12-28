@@ -16,7 +16,7 @@ const address = {
 const hobbies = ['Skating', 'Collect Radioactive Man Comics', "Krusty's Show", 'Gamming', 'Slingshot'];
 
 // Generate personalized bio
-const personalizedBio = `Hi, I'm ${userName}.
+const personalizedBio = `Hi!, I'm ${userName}.
 I'm ${age} years old.
 I live in ${address.city}.
 I love ${hobbies.join(', ')}.
