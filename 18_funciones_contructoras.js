@@ -104,3 +104,39 @@ const student4 = AddStudentWithArrowFunction('Luis', 'Sinesterra', 24);
 
 console.log(student3);
 console.log(student4);
+
+// Ejemplo 7
+
+function Book(name, author, category) {
+    this.name = name;
+    this.category = category;
+    this.author = author;
+    this.messageForLibrary = function() {
+    console.log(`Muchas Gracias por su donacion del libro: 
+${this.name} escrito por ${this.author} para nuestra seccion de ${this.category}.`);
+    }
+};
+
+const Libro1 = new Book('El Coronel no tiene quien le Escriba,', 'Gabriel Garcia Marquez', 'Literatura');
+
+Libro1.messageForLibrary();
+
+
+
+// Ejemplo 8
+
+const Book2 = (name,  author, category) => ({
+    name: name,
+    category: category,
+    author: author,
+    libraryMessage: () => {
+        console.log(`Muchas Gracias por su donacion del libro: 
+${name} escrito por ${author} para nuestra seccion de ${category}.`);
+    }
+});
+
+
+const Libro2 = Book2('Cien Años de Soledad,', 'Gabriel Garcia Marquez', 'Literatura');
+
+Libro2.libraryMessage();
+
