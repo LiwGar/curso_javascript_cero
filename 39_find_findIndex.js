@@ -44,8 +44,8 @@ function displayWinnerInformation (winner) {
   }
 }
 
-const winnerByName = findWinnerByName('Emily')
-const indexWinnerByTicket = findIndexWinnerByTicket(1008)
+const winnerByName = findWinnerByName('Emily');
+const indexWinnerByTicket = findIndexWinnerByTicket(1008);
 
-displayWinnerInformation(winnerByName)
-console.log('Index of Winner by Ticket Number: ', indexWinnerByTicket)
+displayWinnerInformation(winnerByName);
+console.log('Index of Winner by Ticket Number: ', indexWinnerByTicket);
